@@ -1,4 +1,4 @@
-const PeopleFilter = ({list,filter_str}) => {
+const Filter = ({list,filter_str}) => {
     return (
         <ul>
             {list.map(person => {
@@ -9,4 +9,4 @@ const PeopleFilter = ({list,filter_str}) => {
     )
 }
 
-export default PeopleFilter
+export default Filter

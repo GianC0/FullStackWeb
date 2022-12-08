@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ac2ecba-1c8f-4c03-921a-f6287920206d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/phonebook/src/components/FormEntry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phonebook/src/components/PeopleFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="7ac2ecba-1c8f-4c03-921a-f6287920206d" name="Changes" comment="part 2">
+      <change afterPath="$PROJECT_DIR$/countries/src/components/DisplayCountryFull.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countries/src/components/DisplayCountryLine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countries/src/components/Filter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Note.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/components/FilterElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/components/PeopleFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/components/Filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="run_countries" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/countries/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,8 +72,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664522643598</updated>
-      <workItem from="1664522647252" duration="15462000" />
+      <workItem from="1664522647252" duration="15633000" />
+      <workItem from="1664713383489" duration="14524000" />
+      <workItem from="1664779604210" duration="12242000" />
     </task>
+    <task id="LOCAL-00001" summary="part 2">
+      <created>1664555549266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664555549266</updated>
+    </task>
+    <task id="LOCAL-00002" summary="part 2">
+      <created>1664555619801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664555619801</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="part 2" />
   </component>
 </project>
