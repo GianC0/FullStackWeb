@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac2ecba-1c8f-4c03-921a-f6287920206d" name="Changes" comment="part 2">
-      <change afterPath="$PROJECT_DIR$/countries/src/components/DisplayCountryFull.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/countries/src/components/DisplayCountryLine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/countries/src/components/Filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phonebook/src/components/Notification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phonebook/src/services/personsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phonebook/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/components/PeopleFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/components/Filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/components/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/components/Filter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -47,6 +48,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mendax/GitHub/FullStackWeb/part2&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -75,6 +82,9 @@
       <workItem from="1664522647252" duration="15633000" />
       <workItem from="1664713383489" duration="14524000" />
       <workItem from="1664779604210" duration="12242000" />
+      <workItem from="1670499021048" duration="754000" />
+      <workItem from="1670499828850" duration="1789000" />
+      <workItem from="1670501720749" duration="27784000" />
     </task>
     <task id="LOCAL-00001" summary="part 2">
       <created>1664555549266</created>
@@ -90,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664555619801</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="part 2">
+      <created>1670499350872</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670499350872</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

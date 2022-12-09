@@ -1,28 +1,23 @@
+import personsService from "./services/personsService";
 import Filter from './components/Filter'
 import FilterElement from "./components/FilterElement";
 import FormEntry from "./components/FormEntry";
 import { useState, useEffect } from 'react'
-import axios from 'axios'
+import Notification from "./components/Notification";
 
 const App = () => {
-    const [persons, setPersons] = useState([])
+    const [persons, setPersons] = useState([]);
     const [newName, setNewName] = useState('');
     const [newNumber, setNewNumber] = useState('');
     const [newFilter, setNewFilter] = useState('');
+    const [errorMessage, setErrorMessage] = useState('')
+    const [notifMessage, setNotifMessage] = useState('')
 
-    const hook = () => {
-        console.log('effect')
 
-        const eventHandler = response => {
-            console.log('promise fulfilled')
-            setPersons(response.data)
-        }
-        const promise = axios.get('http://localhost:3001/persons')
-        promise.then(eventHandler)
-    };
-
-    console.log("rendering "+persons.length+" people");
-    useEffect(hook,[]);
+    useEffect( () => {
+        console.log("rendering " + persons.length + " people");
+        personsService.getAll().then(data => {setPersons(data)} )
+        },[]);
 
 
     const handleNameChange = (event) => {
@@ -34,8 +29,14 @@ const App = () => {
     const handleFilterChange = (event) => {
         setNewFilter(event.target.value)
     }
+    const handleDelete = (person) => {
+        if (window.confirm(`Sure to delete ${person.name}?`)){
+            personsService.remove(person.id)
+                .then(setPersons(persons.filter(p => p.name !== person.name)) )
+        }
 
-    const checkNameExistance = () => {
+    }
+    const checkNameExistence = () => {
         let out = false
         persons.forEach(person => {
             if (!out && person.name === newName) {
@@ -44,23 +45,56 @@ const App = () => {
         })
         return (out)
     };
+
     const submitForm = (event) => {
         event.preventDefault()
-        if (!checkNameExistance()) {
-            const nameObject = {name: newName, number: newNumber, id: persons.length+1}
-            setPersons(persons.concat(nameObject))
-            setNewName('')
-            setNewNumber('')
+        if (!checkNameExistence()) {
+            const contactObject = {name: newName, number: newNumber, id: persons.length+1}
+            personsService.create(contactObject).then( () => {
+                setPersons(persons.concat(contactObject));
+                setNewName('');
+                setNewNumber('');
+                setNotifMessage(`${newName} has been added`)
+                setTimeout(() => {
+                    setNotifMessage(null)
+                }, 2000)
+            })
+
+
         }
 
         else {
-            alert(`The name: ${newName} is already in the Phonebook`)
-            setNewName('')
+            if(window.confirm(`The name: ${newName} is already in the Phonebook. Wanna update it?`)){
+                let id = 0;
+                persons.forEach(person => {if (person.name === newName) {id = person.id}});
+                const contactObject = {name: newName, number: newNumber, id: id };
+                personsService.update(id,contactObject)
+                    .then(() => {
+                        personsService.getAll().then(data => {
+                            setPersons(data);
+                            setTimeout(() => {
+                                setNotifMessage(null)
+                            }, 2000)})
+                        setNewName('');
+                        setNewNumber('');
+                        setNotifMessage(`${newName}'s number has been updated`)
+                    })
+                    .catch(error => {
+                        console.log(error)
+                        setErrorMessage(`${newName} has been deleted`)
+                        setPersons(persons.filter(p => p.name !== newName))
+                    })
+            }
+
+            else{setNewName('')}
+
         }
     };
 
     return (
         <div>
+            <Notification message={errorMessage} error={true} ></Notification>
+            <Notification message={notifMessage} error={false} ></Notification>
             <h1>Phonebook</h1>
             <FilterElement value={newFilter} handler={handleFilterChange} ></FilterElement>
             <h2>Add new</h2>
@@ -72,7 +106,7 @@ const App = () => {
 
 
             <h2>Numbers</h2>
-            <Filter list={persons} filter_str={newFilter} ></Filter>
+            <Filter list={persons} filter_str={newFilter} deleteHandler={handleDelete} ></Filter>
 
         </div>
     )
