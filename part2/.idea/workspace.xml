@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ac2ecba-1c8f-4c03-921a-f6287920206d" name="Changes" comment="part 2">
-      <change afterPath="$PROJECT_DIR$/phonebook/src/components/Notification.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phonebook/src/services/personsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/components/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/components/Filter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +79,7 @@
       <workItem from="1664779604210" duration="12242000" />
       <workItem from="1670499021048" duration="754000" />
       <workItem from="1670499828850" duration="1789000" />
-      <workItem from="1670501720749" duration="27784000" />
+      <workItem from="1670501720749" duration="28998000" />
     </task>
     <task id="LOCAL-00001" summary="part 2">
       <created>1664555549266</created>
@@ -107,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670499350872</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="part 2">
+      <created>1670595255315</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670595255316</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

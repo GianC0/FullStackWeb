@@ -15,7 +15,7 @@ const App = () => {
 
 
     useEffect( () => {
-        console.log("rendering " + persons.length + " people");
+
         personsService.getAll().then(data => {setPersons(data)} )
         },[]);
 
@@ -49,7 +49,9 @@ const App = () => {
     const submitForm = (event) => {
         event.preventDefault()
         if (!checkNameExistence()) {
-            const contactObject = {name: newName, number: newNumber, id: persons.length+1}
+            const contactObject = {name: newName, number: newNumber}
+            console.log("requesting add of "+newName+" "+newNumber)
+            console.log(contactObject)
             personsService.create(contactObject).then( () => {
                 setPersons(persons.concat(contactObject));
                 setNewName('');
@@ -58,6 +60,10 @@ const App = () => {
                 setTimeout(() => {
                     setNotifMessage(null)
                 }, 2000)
+            }).catch(error => {
+                setErrorMessage(error.message)
+                setNewName('')
+                setNewNumber('')
             })
 
 
@@ -81,8 +87,9 @@ const App = () => {
                     })
                     .catch(error => {
                         console.log(error)
-                        setErrorMessage(`${newName} has been deleted`)
-                        setPersons(persons.filter(p => p.name !== newName))
+                        setErrorMessage(error.message)
+                        setNewName('')
+                        setNewNumber('')
                     })
             }
 
