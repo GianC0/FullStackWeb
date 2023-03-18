@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11cffdac-4696-46d6-b1b9-052e4a25b678" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../part4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/.idea/part4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/src/controllers/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/src/models/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/src/utils/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/src/utils/logger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../part4/src/utils/middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../part3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../part3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Mendax/GitHub/FullStackWeb/part3",
+    "last_opened_file_path": "C:/Users/Mendax/GitHub/FullStackWeb/part4/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +50,7 @@
       <workItem from="1678560277601" duration="2308000" />
       <workItem from="1678626634688" duration="2857000" />
       <workItem from="1678888429263" duration="206000" />
+      <workItem from="1678890551880" duration="17000" />
     </task>
     <servers />
   </component>
