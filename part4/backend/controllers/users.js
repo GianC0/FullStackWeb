@@ -4,13 +4,6 @@ const User = require('../models/user')
 const logger = require('../utils/logger')
 const jwt = require('jsonwebtoken')
 
-const getTokenFrom = request => {
-  const authorization = request.get('authorization')
-  if (authorization && authorization.startsWith('Bearer ')) {
-    return authorization.replace('Bearer ', '')
-  }
-  return null
-}
 
 usersRouter.post('/', async (request, response,next) => {
   const { username, name, password } = request.body
@@ -22,7 +15,7 @@ usersRouter.post('/', async (request, response,next) => {
       error: 'Provide a password whose length is at least 3 characters',
     })
   } else {
-    const token = getTokenFrom(request)
+    const token = request.token
     const decodedToken = jwt.verify(token, process.env.SECRET)
     if (!decodedToken.id) {
       return response.status(401).json({ error: 'token missing or invalid' })
